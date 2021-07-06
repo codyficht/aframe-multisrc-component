@@ -167,8 +167,8 @@ AFRAME.registerComponent('multisrc', {
             
             material.map = null
             material.needsUpdate = true;
-            node.material.flatShading = true;
-            node.material.needsUpdate = true;
+            material.flatShading = true;
+            material.needsUpdate = true;
             
           }
 
