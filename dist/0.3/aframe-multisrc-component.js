@@ -167,8 +167,6 @@ AFRAME.registerComponent('multisrc', {
             
             material.map = null
             material.needsUpdate = true;
-            material.flatShading = true;
-            material.needsUpdate = true;
             
           }
 
@@ -183,6 +181,10 @@ AFRAME.registerComponent('multisrc', {
 
               //give each material the image asset
               material.map = loader.load(texture.url)
+              
+              material.needsUpdate = true;
+
+              material.flatShading = true;
               material.needsUpdate = true;
 
             }//end if its an image
