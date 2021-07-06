@@ -47,7 +47,7 @@ AFRAME.registerComponent('multisrc', {
       for(i=0;i<this.sides;i++){
 
         //add plain new material to array, give it a unique name
-        this.materials.push( new THREE.MeshStandardMaterial({ name: 'material-' + i + ''}) )
+        this.materials.push( new THREE.MeshBasicMaterial({ name: 'material-' + i + ''}) )
 
       }//end for images loop
   
